@@ -23,7 +23,6 @@ const allExperiences: ProjectExperience[] = [
     description: [
       "Built and deployed chess training website for mentally handicapped individuals.",
       "Developed games in Python and JavaScript",
-      "Used Pandas and Matplotlib to analyze efficiency of various algorithms",
       "Worked closely with clients to ensure project quality",
       "Maintained a 5star rating on Fiverr for 6 months"
     ]

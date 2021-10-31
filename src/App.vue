@@ -19,6 +19,9 @@ export default defineComponent({
 
 <style lang="scss">
 $blue: rgb(0, 139, 255);
+$gray: rgb(55, 66, 70);
+$lightGray: rgb(155, 166, 170);
+$veryLightGray: rgb(200, 200, 200);
 
 * {
   margin: 0;
@@ -52,7 +55,7 @@ body {
 }
 
 .a4 {
-  border: 2px solid black;
+  border: 2px solid rgb(80, 80, 80);
   width: 794px;
   height: 1133px;
   padding: 1rem;

@@ -8,7 +8,7 @@ const allSkills: SkillsType[] = [
   {
     type: "Full Stack Technologies",
     // prettier-ignore
-    skills: ['HTML5', 'CSS3', 'ReactJS', 'VueJS', 'NodeJS', "GraphQL", "Flask", "Django", "SQL", "MongoDB", "Docker", "Kubernetes"]
+    skills: ['HTML5', 'CSS3', 'ReactJS', 'VueJS', 'NodeJS',"Flask", "GraphQL",  "Django", "SQL", "MongoDB", "Nginx", "Docker", "Kubernetes","AWS", "Firebase"]
   },
   {
     type: "Data Science",

@@ -25,8 +25,7 @@ export default defineComponent({
     return {
       iconNames: ICON_NAMES
     };
-  },
-  methods: {}
+  }
 });
 </script>
 
