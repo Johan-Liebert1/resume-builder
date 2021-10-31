@@ -3,3 +3,6 @@ export const ICON_NAMES = {
   EMAIL: "EMAIL",
   GITHUB: "GITHUB"
 };
+
+export const PROJECT = "Projects";
+export const EXPERIENCE = "Experience";

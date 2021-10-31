@@ -34,6 +34,7 @@ body {
   margin-top: 60px;
   display: flex;
   justify-content: center;
+  padding-bottom: 5rem;
 }
 
 .blue {
