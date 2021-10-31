@@ -1,6 +1,7 @@
 <template>
   <div class="a4">
     <Header />
+    <SectionContainer />
   </div>
 </template>
 
@@ -8,10 +9,11 @@
 import { defineComponent } from "vue";
 
 import Header from "./components/Header.vue";
+import SectionContainer from "./components/SectionContainer.vue";
 
 export default defineComponent({
   name: "App",
-  components: { Header }
+  components: { Header, SectionContainer }
 });
 </script>
 
