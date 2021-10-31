@@ -53,10 +53,12 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
+$gray: rgb(55, 66, 70);
+
 .container {
   width: 100%;
   text-align: left;
-  color: rgb(55, 66, 70);
+  color: $gray;
 }
 
 .list-item {

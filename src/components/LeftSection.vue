@@ -1,11 +1,6 @@
 <template>
   <div class="left-section">
     <ProjectsAndExperience :header="project" :type="project" :list="allProjects" />
-    <ProjectsAndExperience
-      :header="experience"
-      :type="experience"
-      :list="allExperiences"
-    />
   </div>
 </template>
 

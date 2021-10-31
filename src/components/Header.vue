@@ -8,7 +8,7 @@
         <SVG :iconName="iconNames.EMAIL" />pragyanpoudyal41999@gmail.com
       </div>
       <div class="email flex">
-        <SVG :iconName="iconNames.GITHUB" />https://www.github.com/Johan-Liebert1
+        <SVG :iconName="iconNames.GITHUB" /> <a>https://www.github.com/Johan-Liebert1</a>
       </div>
     </div>
   </div>
@@ -43,6 +43,10 @@ export default defineComponent({
   font-family: Arial, serif;
   font-size: 24.1px;
   font-weight: bold;
+}
+
+.jobname {
+  margin: 0.5rem 0;
 }
 
 .info {

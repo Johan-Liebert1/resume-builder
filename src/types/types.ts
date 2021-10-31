@@ -9,3 +9,8 @@ export type ProjectExperience = {
   };
   description: string[];
 };
+
+export type SkillsType = {
+  type: string;
+  skills: string[];
+};
