@@ -7,6 +7,12 @@
         Links: <a :href="item.links.live" v-if="item.links.live" target="_blank">Live</a>
         <a :href="item.links.github" v-if="item.links.github" target="_blank">GitHub</a>
       </div>
+      <div v-if="item.company" class="company-time">
+        <p class="blue bold company">{{ item.company }}</p>
+        <p class="time">
+          <SVG :iconName="iconNames.CALENDAR" /> {{ item.startDate }} - {{ item.endDate }}
+        </p>
+      </div>
       <div class="description">
         <p v-for="(desc, idx) in item.description" :key="idx">• {{ desc }}</p>
       </div>
@@ -19,9 +25,11 @@ import { defineComponent, PropType } from "vue";
 import SectionHeader from "./SectionHeader.vue";
 
 import { ProjectExperience } from "../types/types";
+import SVG from "./SVG.vue";
+import { ICON_NAMES } from "@/constants/constants";
 
 export default defineComponent({
-  components: { SectionHeader },
+  components: { SectionHeader, SVG },
   props: {
     header: {
       type: String,
@@ -36,8 +44,10 @@ export default defineComponent({
       required: true
     }
   },
-  mounted() {
-    console.log(this.list);
+  data() {
+    return {
+      iconNames: ICON_NAMES
+    };
   }
 });
 </script>
@@ -51,10 +61,30 @@ export default defineComponent({
 
 .list-item {
   margin-bottom: 1rem;
+  font-size: 12px;
+}
+
+.company-time {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.25rem 0;
+
+  .company {
+    margin-right: 1rem;
+  }
+
+  .time {
+    display: flex;
+    align-items: baseline;
+
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
 }
 
 .links {
-  font-size: 12px;
   margin: 0.25rem 0;
 
   a {
@@ -67,8 +97,6 @@ export default defineComponent({
 }
 
 .description {
-  font-size: 12px;
-
   p {
     margin: 0.2rem 0;
     text-align: justify;

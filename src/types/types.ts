@@ -1,5 +1,6 @@
 export type ProjectExperience = {
   name: string;
+  company?: string;
   startDate?: string;
   endDate?: string;
   links?: {

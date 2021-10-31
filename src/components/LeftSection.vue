@@ -1,6 +1,11 @@
 <template>
   <div class="left-section">
     <ProjectsAndExperience :header="project" :type="project" :list="allProjects" />
+    <ProjectsAndExperience
+      :header="experience"
+      :type="experience"
+      :list="allExperiences"
+    />
   </div>
 </template>
 
@@ -9,6 +14,7 @@ import { defineComponent } from "vue";
 import ProjectsAndExperience from "./ProjectsAndExperience.vue";
 import { EXPERIENCE, PROJECT } from "@/constants/constants";
 import allProjects from "@/constants/projects";
+import allExperiences from "@/constants/experience";
 
 export default defineComponent({
   components: { ProjectsAndExperience },
@@ -16,7 +22,8 @@ export default defineComponent({
     return {
       project: PROJECT,
       experience: EXPERIENCE,
-      allProjects
+      allProjects,
+      allExperiences
     };
   }
 });
