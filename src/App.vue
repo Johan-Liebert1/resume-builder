@@ -34,10 +34,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   display: flex;
   justify-content: center;
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
 }
 
 .blue {
@@ -59,5 +59,12 @@ body {
   width: 794px;
   height: 1133px;
   padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  text-decoration: underline;
+  margin-right: 1rem;
 }
 </style>

@@ -5,10 +5,16 @@
     <div class="info">
       <div class="phone flex"><SVG :iconName="iconNames.PHONE" /> +919818868755</div>
       <div class="email flex">
-        <SVG :iconName="iconNames.EMAIL" />pragyanpoudyal41999@gmail.com
+        <SVG :iconName="iconNames.EMAIL" />
+        <a href="mailto:pragyanpoudyal41999@gmail.com" target="_blank"
+          >pragyanpoudyal41999@gmail.com</a
+        >
       </div>
       <div class="email flex">
-        <SVG :iconName="iconNames.GITHUB" /> <a>https://www.github.com/Johan-Liebert1</a>
+        <SVG :iconName="iconNames.GITHUB" />
+        <a href="https://www.github.com/Johan-Liebert1" target="_blank">
+          https://www.github.com/Johan-Liebert1
+        </a>
       </div>
     </div>
   </div>

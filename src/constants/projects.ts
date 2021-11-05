@@ -42,6 +42,18 @@ const allProjects: ProjectExperience[] = [
       "Used docker to containerize the application and configured AWS EC2 instance to host the server using nginx.",
       "Technologies - TypeScript, FastAPI, React, PostgreSQL, AWS, Docker, Nginx"
     ]
+  },
+  {
+    name: "COVID-19 Dashboard",
+    links: {
+      live: "https://covid19-data-viz.herokuapp.com/",
+      github: "https://github.com/Johan-Liebert1/Covid-19_DataAnalysis"
+    },
+    description: [
+      "Scraped data from the internet; cleaned and organized the data, and created python scripts to plot and analyze COVID-19 pandemic data.",
+      "Used Flask to develop an API for the visualizations created through Pandas and Matplotlib. Used ReactJS for the frontend.",
+      "Technologies - Pandas, GeoPandas, Numpy, Matplotlib, Flask, ReactJS"
+    ]
   }
 ];
 

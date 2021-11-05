@@ -2,6 +2,18 @@ import { ProjectExperience } from "@/types/types";
 
 const allExperiences: ProjectExperience[] = [
   {
+    name: "Software Developer Intern",
+    company: "Neverinstall",
+    startDate: "09/2021",
+    endDate: "Ongoing",
+    description: [
+      "Integrated Web Push Notifications and updates that helped in increasing user engagement and gather intel on users through surveys",
+      "Work on microservices and cron jobs",
+      "Integrated and maintained subscriptions based payment system",
+      "Technologies - NextJS, PostgreSQL, AWS, Serverless, Microservices, Firebase"
+    ]
+  },
+  {
     name: "Web Developer Intern",
     company: "AI Monk",
     startDate: "03/2021",
