@@ -2,7 +2,7 @@
   <div class="container">
     <SectionHeader :headerText="header" />
     <div class="list-item" v-for="item in list" :key="item.name">
-      <h3>{{ item.name }}</h3>
+      <h3 :style="{ color: '#130f40' }">{{ item.name }}</h3>
       <div v-if="item.links" class="links">
         Links: <a :href="item.links.live" v-if="item.links.live" target="_blank">Live</a>
         <a :href="item.links.github" v-if="item.links.github" target="_blank">GitHub</a>
@@ -100,6 +100,7 @@ $gray: rgb(55, 66, 70);
 
 .description {
   p {
+    line-height: 0.97rem;
     margin: 0.2rem 0;
     text-align: justify;
   }
